@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="heatingIcon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.74029882"
+     inkscape:cx="396.46153"
+     inkscape:cy="561.93525"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2378"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2097"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1820"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect859"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:7.04656;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 78.422625,105.6658 c 11.343763,-0.10934 22.687505,-0.21868 30.399455,-0.18675 7.71196,0.0319 11.79129,0.20508 14.00439,2.64117 2.2131,2.4361 2.55922,7.1337 -4.04683,8.88306 -6.60605,1.74936 -20.164311,0.55003 -28.175288,0.63331 -8.010977,0.0833 -10.828245,1.64522 -12.101739,3.73896 -1.273495,2.09373 -1.354863,5.16566 5.00146,6.36256 6.356323,1.19689 19.146677,0.64682 26.750307,0.37175 7.60364,-0.27506 10.02039,-0.27511 11.62914,1.20096 1.60874,1.47608 2.40948,4.42828 1.34177,6.56043 -1.06772,2.13215 -4.00356,3.44415 -12.21072,3.55354 -8.20716,0.10938 -21.687252,-0.9841 -28.011936,0.70376 -6.324685,1.68787 -5.495355,6.15664 -3.545596,8.38903 1.949759,2.2324 5.013558,2.22797 12.225499,2.19377 7.211941,-0.0342 18.521453,-0.0979 29.850853,-0.16176"
+       id="path2376"
+       inkscape:path-effect="#path-effect2378"
+       inkscape:original-d="m 78.422625,105.6658 c 11.343766,-0.10905 22.687505,-0.21838 34.031215,-0.32802 4.08019,0.17348 8.15952,0.34663 12.23952,0.51953 0.34649,4.69899 0.6926,9.39659 1.03847,14.09466 -13.55826,-1.19911 -27.11652,-2.39844 -40.674827,-3.59799 -2.463442,1.36622 -5.280709,2.92817 -7.753277,4.29857 -0.07434,2.81674 -0.155704,5.88867 -0.233951,8.83253 12.790634,-0.54978 25.580985,-1.09985 38.371495,-1.65023 2.41675,-3e-5 4.8335,-8e-5 7.25025,-1.5e-4 0.80096,2.95214 1.60169,5.90434 2.40221,8.85655 -2.93602,1.31246 -5.87186,2.62446 -8.80808,3.93626 -13.47826,-1.09314 -26.958348,-2.18662 -40.437093,-3.2802 0.829595,4.46907 1.658925,8.93784 2.488136,13.4071 3.070105,-0.004 6.133903,-0.009 9.208447,-0.0133 11.349339,-0.0637 22.65885,-0.12738 33.98825,-0.19152"
+       sodipodi:nodetypes="ccccccccccccccc" />
+  </g>
+</svg>

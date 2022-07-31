@@ -1,0 +1,394 @@
+@import "../../support/design.scss";
+
+.sidebar-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 900;
+  }
+  
+  // $primary-color: #4285f4 !default;
+  // $base-bg: #2a2a2e !default;
+  
+  // $item-color: #fff !default;
+  
+  // $item-active-color: null !default;
+  // $item-active-bg: null !default;
+  
+  // $item-open-color: #fff !default;
+  // $item-open-bg: $primary-color !default;
+  
+  // $item-hover-color: null !default;
+  // $item-hover-bg: rgba(darken($base-bg, 5%), 0.5) !default;
+  
+  // $icon-color: null !default;
+  // $icon-bg: darken( $base-bg, 5% ) !default;
+  
+  // $icon-active-color: null !default;
+  // $icon-active-bg: null !default;
+  
+  // $icon-open-color: null !default;
+  // $icon-open-bg: $item-open-bg !default;
+  
+  // $mobile-item-color: #fff !default;
+  // $mobile-item-bg: $primary-color !default;
+  // $mobile-icon-color: $mobile-item-color !default;
+  // $mobile-icon-bg: $mobile-item-bg !default;
+  
+  // $dropdown-bg: lighten( $base-bg, 5% ) !default;
+  // $dropdown-color: null !default;
+  
+  // $item-font-size: 16px !default;
+  // $item-line-height: 30px !default;
+  // $item-padding: 10px !default;
+  // $icon-height: 30px !default;
+  // $icon-width: 30px !default;
+  
+  $primary-color: lighten( $selected-background-color, 20% );
+  $base-bg: $menu-background-color;
+  
+  $item-color: $text-secondary-color;
+  
+  $item-active-color: $text-primary-color;
+  $item-active-bg: null;
+  
+  $item-open-color: #fff !default;
+  $item-open-bg: $primary-color !default;
+  
+  $item-hover-color: null !default;
+  $item-hover-bg: $selected-background-color;
+  
+  $icon-color: null !default;
+  // $icon-bg: darken( $base-bg, 3% );
+  $icon-bg: $base-bg;
+  
+  $icon-active-color: null !default;
+  $icon-active-bg: null !default;
+  
+  $icon-open-color: null !default;
+  $icon-open-bg: $item-open-bg !default;
+  
+  $mobile-item-color: #fff !default;
+  $mobile-item-bg: $primary-color !default;
+  $mobile-icon-color: $mobile-item-color !default;
+  $mobile-icon-bg: $mobile-item-bg !default;
+  
+  $dropdown-bg: lighten( $base-bg, 3% ) !default;
+  $dropdown-color: null !default;
+  
+  $item-font-size: 16px !default;
+  $item-line-height: 20px !default;
+  $item-padding: 6px !default;
+  $icon-height: 30px !default;
+  $icon-width: 30px !default;
+  
+  .v-sidebar-menu {
+    background-color: $base-bg;
+    .vsm--link {
+      color: $item-color;
+      &_exact-active,
+      &_active {
+        color: $item-active-color;
+        background-color: $item-active-bg;
+      }
+      &_level-1 {
+        &.vsm--link_exact-active,
+        &.vsm--link_active {
+          box-shadow: 3px 0px 0px 0px $primary-color inset;
+          & .vsm--icon {
+            color: $icon-active-color;
+            background-color: $icon-active-bg;
+          }
+        }
+        & .vsm--icon {
+          background-color: $icon-bg;
+        }
+      }
+      &_hover,
+      &:hover {
+        color: $item-hover-color;
+        background-color: $item-hover-bg;
+      }
+      &_mobile-item {
+        color: $mobile-item-color;
+        &.vsm--link_hover,
+        &:hover {
+          color: $mobile-item-color;
+        }
+      }
+    }
+  
+    &.vsm_collapsed {
+      .vsm--link_level-1.vsm--link_hover,
+      .vsm--link_level-1:hover {
+        .vsm--icon {
+          color: $mobile-icon-color;
+          background-color: $mobile-icon-bg;
+        }
+      }
+    }
+  
+    .vsm--icon {
+      color: $icon-color;
+    }
+  
+    .vsm--dropdown {
+      & .vsm--list {
+        background-color: $dropdown-bg;
+      }
+      & .vsm--link {
+        color: $dropdown-color;
+      }
+      & .vsm--icon {
+        color: $dropdown-color;
+      }
+    }
+  
+    .vsm--mobile-bg {
+      background-color: $mobile-item-bg;
+    }
+  
+    &.vsm_expanded {
+      .vsm--item_open {
+        .vsm--link {
+          &_level-1 {
+            color: $item-open-color;
+            background-color: $item-open-bg;
+            & .vsm--icon {
+              color: $icon-open-color;
+              background-color: $icon-open-bg;
+            }
+          }
+        }
+      }
+    }
+  
+    &.vsm_rtl {
+      .vsm--link_level-1.vsm--link_active,
+      .vsm--link_level-1.vsm--link_exact-active {
+        box-shadow: -3px 0px 0px 0px $primary-color inset;
+      }
+    }
+  
+    .vsm--header {
+      color: rgba($item-color, 0.7);
+    }
+    .vsm--badge_default {
+      color: $item-color;
+      // background-color: darken( $base-bg, 5% );
+      background-color: $base-bg;
+    }
+    .vsm--toggle-btn {
+      color: $item-color;
+      // background-color: darken( $base-bg, 5% );
+      background-color: $icon-bg;
+    }
+  }
+
+
+
+  .v-sidebar-menu {
+    * {
+      box-sizing: border-box;
+    }
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    transition: 0.3s max-width ease;
+    
+    .vsm--scroll-wrapper {
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    
+    .vsm--dropdown > .vsm--list {
+      padding: 5px;
+    }
+    
+    .vsm--item {
+      position: relative;
+      display: block;
+      width: 100%;
+      white-space: nowrap;
+    }
+  
+    .vsm--link {
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-size: $item-font-size;
+      font-weight: 400;
+      padding: $item-padding;
+      line-height: $item-line-height;
+      text-decoration: none;
+      user-select: none;
+      z-index: 20;
+      transition: 0.3s all ease;
+      &_exact-active,
+      &_active {
+        font-weight: 600;
+      }
+      &_disabled {
+        opacity: 0.4;
+        pointer-events: none;
+      }
+      &_level-1 {
+        .vsm--icon {
+          height: $icon-height;
+          line-height: $icon-height;
+          width: $icon-width;
+          flex-shrink: 0;
+          text-align: center;
+          border-radius: 3px;
+        }
+      }
+    }
+  
+    .vsm--icon {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  
+    .vsm--title {
+      flex-grow: 1;
+    }
+  
+    .vsm--arrow {
+      width: 30px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 900;
+      transition: 0.3s transform ease;
+      &:after {
+        content: '\f105';
+        font-family: 'Font Awesome 5 Free';
+      }
+      &_open {
+        transform: rotate(90deg);
+      }
+      &_slot:after {
+        display: none;
+      }
+    }
+  
+    .vsm--header {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+  
+    .vsm--badge {
+      &_default {
+        padding: 0px 6px;
+        font-size: 12px;
+        border-radius: 3px;
+        height: 20px;
+        line-height: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  
+    .vsm--toggle-btn {
+      display: block;
+      text-align: center;
+      font-style: normal;
+      font-weight: 900;
+      height: 50px;
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      &:after {
+        content: '\f337';
+        font-family: 'Font Awesome 5 Free';
+      }
+      &_slot:after {
+        display: none;
+      }
+    }
+  
+    &.vsm_collapsed {
+      & .vsm--link_level-1 {
+        &.vsm--link_hover,
+        &:hover {
+          background-color: transparent !important;
+        }
+      }
+    }
+  
+    &.vsm_rtl {
+      right: 0;
+      left: inherit;
+      text-align: right;
+      direction: rtl;
+  
+      & .vsm--icon {
+        margin-left: 10px;
+        margin-right: 0px;
+      }
+    }
+
+    &.vsm_relative {
+      position: relative;
+      height: 100%;
+    }
+
+    .expand-enter-active,
+    .expand-leave-active {
+      transition: height 0.3s ease;
+      overflow: hidden;
+    }
+    .expand-enter,
+    .expand-leave-to {
+      height: 0 !important;
+    }
+
+    .slide-animation-enter-active {
+      transition: width 0.3s ease;
+    }
+    .slide-animation-leave-active {
+      transition: width 0.3s ease;
+    }
+    .slide-animation-enter,
+    .slide-animation-leave-to {
+      width: 0 !important;
+    }
+
+    .fade-animation-enter-active {
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .fade-animation-leave-active {
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .fade-animation-enter,
+    .fade-animation-leave-to {
+      opacity: 0 !important;
+      visibility: hidden !important;
+    }
+
+    .vsm--mobile-item>.vsm--item {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    .vsm--mobile-item>.vsm--item>.vsm--link {
+      margin: 0 !important;
+      background-color: transparent !important;
+      line-height: $icon-height !important;
+    }
+  }
